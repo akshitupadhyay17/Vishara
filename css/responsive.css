@@ -133,7 +133,8 @@
   }
 
   .footer__grid,
-  .footer__grid--5col {
+  .footer__grid--5col,
+  .footer__grid--6col {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-8);
   }
@@ -199,7 +200,8 @@
 
   /* Footer */
   .footer__grid,
-  .footer__grid--5col {
+  .footer__grid--5col,
+  .footer__grid--6col {
     grid-template-columns: 1fr;
     gap: var(--space-8);
   }

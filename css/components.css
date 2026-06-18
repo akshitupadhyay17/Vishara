@@ -476,6 +476,10 @@
   grid-template-columns: 1.5fr repeat(4, 1fr);
 }
 
+.footer__grid--6col {
+  grid-template-columns: 1.5fr repeat(5, 1fr);
+}
+
 /* ---- Nav Actions ---- */
 .nav__actions {
   display: flex;
