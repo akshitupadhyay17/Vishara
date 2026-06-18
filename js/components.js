@@ -98,44 +98,50 @@ function renderHeader() {
           </li>
 
           <!-- ===== LEGAL ===== -->
-          <li class="nav__item nav__item--has-dropdown">
+          <li class="nav__item nav__item--has-dropdown nav__item--mega">
             <a href="#" class="nav__link">
               Legal
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
             </a>
-            <div class="nav__dropdown">
-              <a href="${base}legal/nda-drafting.html" class="nav__dropdown-link">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                NDA Drafting
-              </a>
-              <a href="${base}legal/licensing-agreements.html" class="nav__dropdown-link">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                Licensing Agreements
-              </a>
-              <a href="${base}legal/assignment-agreements.html" class="nav__dropdown-link">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><polyline points="17 11 19 13 23 9"/></svg>
-                Assignment Agreements
-              </a>
-              <a href="${base}legal/technology-transfer.html" class="nav__dropdown-link">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-                Technology Transfer
-              </a>
-              <a href="${base}legal/franchise-agreements.html" class="nav__dropdown-link">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-                Franchise Agreements
-              </a>
-              <a href="${base}legal/mou-drafting.html" class="nav__dropdown-link">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                MOU Drafting
-              </a>
-              <a href="${base}legal/service-agreements.html" class="nav__dropdown-link">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-                Service Agreements
-              </a>
-              <a href="${base}legal/employment-ip-agreements.html" class="nav__dropdown-link">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-                Employment IP Agreements
-              </a>
+            <div class="nav__dropdown nav__mega">
+              <div class="nav__mega-grid">
+                <!-- Litigation Col 1 -->
+                <div class="nav__mega-col">
+                  <span class="nav__mega-heading">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    Lawyers & Representation
+                  </span>
+                  <a href="${base}legal/property-lawyers.html" class="nav__dropdown-link">Property Lawyers</a>
+                  <a href="${base}legal/criminal-lawyers.html" class="nav__dropdown-link">Criminal Lawyers</a>
+                  <a href="${base}legal/civil-lawyers.html" class="nav__dropdown-link">Civil Lawyers</a>
+                </div>
+                <!-- Litigation Col 2 -->
+                <div class="nav__mega-col">
+                  <span class="nav__mega-heading" style="opacity: 0; user-select: none;">Hidden</span>
+                  <a href="${base}legal/family-lawyers.html" class="nav__dropdown-link">Matrimonial & Family</a>
+                  <a href="${base}legal/corporate-lawyers.html" class="nav__dropdown-link">Corporate & Startup</a>
+                  <a href="${base}legal/recovery-lawyers.html" class="nav__dropdown-link">Recovery & Cheque Bounce</a>
+                </div>
+                <!-- Notices Col 1 -->
+                <div class="nav__mega-col">
+                  <span class="nav__mega-heading">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                    Notices & Agreements
+                  </span>
+                  <a href="${base}legal/nda-drafting.html" class="nav__dropdown-link">NDA Drafting</a>
+                  <a href="${base}legal/licensing-agreements.html" class="nav__dropdown-link">Licensing Agreements</a>
+                  <a href="${base}legal/assignment-agreements.html" class="nav__dropdown-link">Assignment Agreements</a>
+                  <a href="${base}legal/technology-transfer.html" class="nav__dropdown-link">Technology Transfer</a>
+                </div>
+                <!-- Notices Col 2 -->
+                <div class="nav__mega-col">
+                  <span class="nav__mega-heading" style="opacity: 0; user-select: none;">Hidden</span>
+                  <a href="${base}legal/franchise-agreements.html" class="nav__dropdown-link">Franchise Agreements</a>
+                  <a href="${base}legal/mou-drafting.html" class="nav__dropdown-link">MOU Drafting</a>
+                  <a href="${base}legal/service-agreements.html" class="nav__dropdown-link">Service Agreements</a>
+                  <a href="${base}legal/employment-ip-agreements.html" class="nav__dropdown-link">Employment IP Agreements</a>
+                </div>
+              </div>
             </div>
           </li>
 
