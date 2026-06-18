@@ -375,6 +375,16 @@
   z-index: var(--z-dropdown);
 }
 
+.nav__dropdown::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: 0;
+  right: 0;
+  height: 15px;
+  background: transparent;
+}
+
 .nav__item:hover .nav__dropdown {
   opacity: 1;
   visibility: visible;
