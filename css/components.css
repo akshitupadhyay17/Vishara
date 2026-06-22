@@ -476,36 +476,71 @@
   flex-shrink: 0;
 }
 
-/* ---- Mega Sub-heading (subsection under a heading) ---- */
-.nav__mega-subheading {
+/* ---- Mega Dropdown Custom Modifiers ---- */
+.nav__item--mega > .nav__dropdown.nav__mega--legal {
+  min-width: 480px;
+}
+
+.nav__mega-grid--2col {
+  grid-template-columns: repeat(2, 1fr) !important;
+}
+
+/* ---- Collapsible Accordion inside Nav Dropdown ---- */
+.nav__collapsible {
+  margin-top: var(--space-2);
+  width: 100%;
+}
+
+.nav__collapsible-trigger {
   display: flex;
   align-items: center;
-  gap: var(--space-2);
+  justify-content: space-between;
+  width: 100%;
+  padding: var(--space-2) var(--space-3);
   font-size: var(--text-xs);
   font-weight: var(--weight-semibold);
   color: var(--text-secondary);
-  padding: var(--space-2) var(--space-3);
-  margin-bottom: var(--space-2);
+  background: transparent;
+  border: 1px solid var(--border-secondary);
   border-radius: var(--radius-md);
+  cursor: pointer;
+  list-style: none; /* Hide default summary arrow */
   transition: var(--transition-all);
-  border-bottom: 1px dashed var(--border-secondary);
-  padding-bottom: var(--space-3);
-  text-transform: uppercase;
-  letter-spacing: var(--tracking-wide);
+  outline: none;
+  user-select: none;
 }
 
-.nav__mega-subheading:hover {
-  color: var(--accent-primary);
+/* Hide default arrow in Safari */
+.nav__collapsible-trigger::-webkit-details-marker {
+  display: none;
+}
+
+.nav__collapsible-trigger:hover {
   background: var(--accent-muted);
+  color: var(--accent-primary);
+  border-color: var(--border-accent);
 }
 
-.nav__mega-subheading svg {
-  width: 16px;
-  height: 16px;
+.nav__collapsible-arrow {
+  width: 12px;
+  height: 12px;
+  color: var(--text-secondary);
+  transition: transform var(--duration-normal) var(--ease-out);
+}
+
+.nav__collapsible-trigger:hover .nav__collapsible-arrow {
   color: var(--accent-primary);
-  stroke: var(--accent-primary);
-  flex-shrink: 0;
-  opacity: 0.7;
+}
+
+.nav__collapsible[open] .nav__collapsible-arrow {
+  transform: rotate(180deg);
+}
+
+.nav__collapsible-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-2) 0 0 var(--space-2);
 }
 
 .nav__mega-col .nav__dropdown-link {

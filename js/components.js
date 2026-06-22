@@ -103,8 +103,8 @@ function renderHeader() {
               Legal
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
             </a>
-            <div class="nav__dropdown nav__mega">
-              <div class="nav__mega-grid">
+            <div class="nav__dropdown nav__mega nav__mega--legal">
+              <div class="nav__mega-grid nav__mega-grid--2col">
                 <!-- Lawyers & Representation Col 1 -->
                 <div class="nav__mega-col">
                   <a href="${base}legal/lawyers-representation.html" class="nav__mega-heading">
@@ -114,30 +114,30 @@ function renderHeader() {
                   <a href="${base}legal/property-lawyers.html" class="nav__dropdown-link">Property Lawyers</a>
                   <a href="${base}legal/criminal-lawyers.html" class="nav__dropdown-link">Criminal Lawyers</a>
                   <a href="${base}legal/civil-lawyers.html" class="nav__dropdown-link">Civil Lawyers</a>
-                  <a href="${base}legal/family-lawyers.html" class="nav__dropdown-link">Matrimonial & Family</a>
                 </div>
-                <!-- Lawyers & Representation Col 2 -->
+                <!-- Lawyers & Representation Col 2 + Collapsible Notices & Agreements -->
                 <div class="nav__mega-col">
                   <span class="nav__mega-heading" style="opacity: 0; user-select: none;">Hidden</span>
+                  <a href="${base}legal/family-lawyers.html" class="nav__dropdown-link">Matrimonial & Family</a>
                   <a href="${base}legal/corporate-lawyers.html" class="nav__dropdown-link">Corporate & Startup</a>
                   <a href="${base}legal/recovery-lawyers.html" class="nav__dropdown-link">Recovery & Cheque Bounce</a>
-                  <a href="${base}legal/nda-drafting.html" class="nav__dropdown-link">NDA Drafting</a>
-                  <a href="${base}legal/licensing-agreements.html" class="nav__dropdown-link">Licensing Agreements</a>
-                </div>
-                <!-- Lawyers & Representation Col 3 -->
-                <div class="nav__mega-col">
-                  <span class="nav__mega-heading" style="opacity: 0; user-select: none;">Hidden</span>
-                  <a href="${base}legal/assignment-agreements.html" class="nav__dropdown-link">Assignment Agreements</a>
-                  <a href="${base}legal/technology-transfer.html" class="nav__dropdown-link">Technology Transfer</a>
-                  <a href="${base}legal/franchise-agreements.html" class="nav__dropdown-link">Franchise Agreements</a>
-                  <a href="${base}legal/mou-drafting.html" class="nav__dropdown-link">MOU Drafting</a>
-                </div>
-                <!-- Lawyers & Representation Col 4 -->
-                <div class="nav__mega-col">
-                  <span class="nav__mega-heading" style="opacity: 0; user-select: none;">Hidden</span>
-                  <a href="${base}legal/service-agreements.html" class="nav__dropdown-link">Service Agreements</a>
-                  <a href="${base}legal/employment-ip-agreements.html" class="nav__dropdown-link">Employment IP Agreements</a>
-                  <a href="${base}legal/notices-agreements.html" class="nav__dropdown-link">Notices & Agreements</a>
+                  
+                  <details class="nav__collapsible">
+                    <summary class="nav__collapsible-trigger">
+                      <span>Notices & Agreements</span>
+                      <svg class="nav__collapsible-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </summary>
+                    <div class="nav__collapsible-content">
+                      <a href="${base}legal/nda-drafting.html" class="nav__dropdown-link">NDA Drafting</a>
+                      <a href="${base}legal/licensing-agreements.html" class="nav__dropdown-link">Licensing Agreements</a>
+                      <a href="${base}legal/assignment-agreements.html" class="nav__dropdown-link">Assignment Agreements</a>
+                      <a href="${base}legal/technology-transfer.html" class="nav__dropdown-link">Technology Transfer</a>
+                      <a href="${base}legal/franchise-agreements.html" class="nav__dropdown-link">Franchise Agreements</a>
+                      <a href="${base}legal/mou-drafting.html" class="nav__dropdown-link">MOU Drafting</a>
+                      <a href="${base}legal/service-agreements.html" class="nav__dropdown-link">Service Agreements</a>
+                      <a href="${base}legal/employment-ip-agreements.html" class="nav__dropdown-link">Employment IP Agreements</a>
+                    </div>
+                  </details>
                 </div>
               </div>
             </div>
