@@ -105,7 +105,7 @@ function renderHeader() {
             </a>
             <div class="nav__dropdown nav__mega">
               <div class="nav__mega-grid">
-                <!-- Litigation Col 1 -->
+                <!-- Lawyers & Representation Col 1 -->
                 <div class="nav__mega-col">
                   <a href="${base}legal/lawyers-representation.html" class="nav__mega-heading">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
@@ -114,32 +114,30 @@ function renderHeader() {
                   <a href="${base}legal/property-lawyers.html" class="nav__dropdown-link">Property Lawyers</a>
                   <a href="${base}legal/criminal-lawyers.html" class="nav__dropdown-link">Criminal Lawyers</a>
                   <a href="${base}legal/civil-lawyers.html" class="nav__dropdown-link">Civil Lawyers</a>
+                  <a href="${base}legal/family-lawyers.html" class="nav__dropdown-link">Matrimonial & Family</a>
                 </div>
-                <!-- Litigation Col 2 -->
+                <!-- Lawyers & Representation Col 2 -->
                 <div class="nav__mega-col">
                   <span class="nav__mega-heading" style="opacity: 0; user-select: none;">Hidden</span>
-                  <a href="${base}legal/family-lawyers.html" class="nav__dropdown-link">Matrimonial & Family</a>
                   <a href="${base}legal/corporate-lawyers.html" class="nav__dropdown-link">Corporate & Startup</a>
                   <a href="${base}legal/recovery-lawyers.html" class="nav__dropdown-link">Recovery & Cheque Bounce</a>
-                </div>
-                <!-- Notices Col 1 -->
-                <div class="nav__mega-col">
-                  <a href="${base}legal/notices-agreements.html" class="nav__mega-heading">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                    Notices & Agreements
-                  </a>
                   <a href="${base}legal/nda-drafting.html" class="nav__dropdown-link">NDA Drafting</a>
                   <a href="${base}legal/licensing-agreements.html" class="nav__dropdown-link">Licensing Agreements</a>
-                  <a href="${base}legal/assignment-agreements.html" class="nav__dropdown-link">Assignment Agreements</a>
-                  <a href="${base}legal/technology-transfer.html" class="nav__dropdown-link">Technology Transfer</a>
                 </div>
-                <!-- Notices Col 2 -->
+                <!-- Lawyers & Representation Col 3 -->
                 <div class="nav__mega-col">
                   <span class="nav__mega-heading" style="opacity: 0; user-select: none;">Hidden</span>
+                  <a href="${base}legal/assignment-agreements.html" class="nav__dropdown-link">Assignment Agreements</a>
+                  <a href="${base}legal/technology-transfer.html" class="nav__dropdown-link">Technology Transfer</a>
                   <a href="${base}legal/franchise-agreements.html" class="nav__dropdown-link">Franchise Agreements</a>
                   <a href="${base}legal/mou-drafting.html" class="nav__dropdown-link">MOU Drafting</a>
+                </div>
+                <!-- Lawyers & Representation Col 4 -->
+                <div class="nav__mega-col">
+                  <span class="nav__mega-heading" style="opacity: 0; user-select: none;">Hidden</span>
                   <a href="${base}legal/service-agreements.html" class="nav__dropdown-link">Service Agreements</a>
                   <a href="${base}legal/employment-ip-agreements.html" class="nav__dropdown-link">Employment IP Agreements</a>
+                  <a href="${base}legal/notices-agreements.html" class="nav__dropdown-link">Notices & Agreements</a>
                 </div>
               </div>
             </div>
