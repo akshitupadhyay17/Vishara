@@ -69,7 +69,7 @@ function renderHeader() {
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                     Trademark
                   </a>
-                  <a href="${base}trademark/services.html" class="nav__dropdown-link">Services</a>
+                  <a href="${base}trademark/services.html" class="nav__dropdown-link">Search</a>
                   <a href="${base}trademark/filing.html" class="nav__dropdown-link">Filing</a>
                   <a href="${base}trademark/prosecution.html" class="nav__dropdown-link">Prosecution</a>
                 </div>
@@ -79,7 +79,7 @@ function renderHeader() {
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
                     Copyright
                   </a>
-                  <a href="${base}copyright/services.html" class="nav__dropdown-link">Services</a>
+                  <a href="${base}copyright/services.html" class="nav__dropdown-link">Search</a>
                   <a href="${base}copyright/filing.html" class="nav__dropdown-link">Filing</a>
                   <a href="${base}copyright/prosecution.html" class="nav__dropdown-link">Prosecution</a>
                 </div>
@@ -89,7 +89,7 @@ function renderHeader() {
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
                     Design
                   </a>
-                  <a href="${base}design/services.html" class="nav__dropdown-link">Services</a>
+                  <a href="${base}design/services.html" class="nav__dropdown-link">Search</a>
                   <a href="${base}design/filing.html" class="nav__dropdown-link">Filing</a>
                   <a href="${base}design/prosecution.html" class="nav__dropdown-link">Prosecution</a>
                 </div>
@@ -302,7 +302,7 @@ function renderFooter() {
             <h4 class="footer__heading">Contact</h4>
             <div class="footer__links">
               <a href="mailto:info@visharaip.com" class="footer__link">info@visharaip.com</a>
-              <a href="tel:+1234567890" class="footer__link">+1 (234) 567-890</a>
+              <a href="tel:+918368327352" class="footer__link">+91 8368327352</a>
             </div>
             <h4 class="footer__heading" style="margin-top: var(--space-6)">Company</h4>
             <div class="footer__links">
