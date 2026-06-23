@@ -34,7 +34,7 @@ function renderHeader() {
     <nav class="nav" id="mainNav">
       <div class="nav__inner">
         <a href="${base}index.html" class="nav__logo" id="navLogo">
-          <div class="nav__logo-icon">V</div>
+          <img src="${base}img/vishara_logo.png" alt="VISHARA IP Logo" style="height: 36px; width: auto; object-fit: contain;">
           <span>VISHARA IP</span>
         </a>
 
@@ -245,7 +245,7 @@ function renderFooter() {
         <div class="footer__grid footer__grid--6col">
           <div class="footer__brand">
             <a href="${base}index.html" class="nav__logo">
-              <div class="nav__logo-icon">V</div>
+              <img src="${base}img/vishara_logo.png" alt="VISHARA IP Logo" style="height: 36px; width: auto; object-fit: contain;">
               <span>VISHARA IP</span>
             </a>
             <p class="footer__brand-text">
