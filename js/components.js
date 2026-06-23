@@ -267,13 +267,12 @@ function renderFooter() {
           <div class="footer__col">
             <h4 class="footer__heading">Legal</h4>
             <div class="footer__links">
-              <a href="${base}legal/nda-drafting.html" class="footer__link">NDA Drafting</a>
-              <a href="${base}legal/licensing-agreements.html" class="footer__link">Licensing Agreements</a>
-              <a href="${base}legal/assignment-agreements.html" class="footer__link">Assignment Agreements</a>
-              <a href="${base}legal/technology-transfer.html" class="footer__link">Technology Transfer</a>
-              <a href="${base}legal/franchise-agreements.html" class="footer__link">Franchise Agreements</a>
-              <a href="${base}legal/mou-drafting.html" class="footer__link">MOU Drafting</a>
-              <a href="${base}legal/service-agreements.html" class="footer__link">Service Agreements</a>
+              <a href="${base}legal/property-lawyers.html" class="footer__link">Property Lawyers</a>
+              <a href="${base}legal/criminal-lawyers.html" class="footer__link">Criminal Lawyers</a>
+              <a href="${base}legal/civil-lawyers.html" class="footer__link">Civil Lawyers</a>
+              <a href="${base}legal/family-lawyers.html" class="footer__link">Matrimonial & Family</a>
+              <a href="${base}legal/corporate-lawyers.html" class="footer__link">Corporate & Startup</a>
+              <a href="${base}legal/recovery-lawyers.html" class="footer__link">Recovery & Cheque Bounce</a>
             </div>
           </div>
 
