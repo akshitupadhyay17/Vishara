@@ -599,6 +599,15 @@
   display: block;
 }
 
+/* ---- Contact Grid ---- */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: var(--space-10);
+  align-items: start;
+  margin-top: var(--space-10);
+}
+
 .theme-toggle .icon-sun {
   display: block;
 }
