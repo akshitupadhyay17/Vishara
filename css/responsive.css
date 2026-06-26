@@ -167,7 +167,8 @@
   /* Grids go single column */
   .grid-2,
   .grid-3,
-  .grid-4 {
+  .grid-4,
+  .contact-grid {
     grid-template-columns: 1fr;
   }
 
