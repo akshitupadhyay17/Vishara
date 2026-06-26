@@ -147,15 +147,12 @@
 
   .nav__item--mega.mobile-open > .nav__dropdown.nav__mega {
     padding: var(--space-3);
+    max-height: 1400px;
   }
 
   .nav__mega-grid {
     grid-template-columns: 1fr 1fr;
     gap: var(--space-4);
-  }
-
-  .nav__item--mega.mobile-open .nav__dropdown {
-    max-height: 1400px;
   }
 
   /* --- Dropdown links --- */
