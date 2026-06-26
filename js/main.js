@@ -81,48 +81,78 @@ function initStickyNav() {
 
 /* ---- Mobile Menu ---- */
 function initMobileMenu() {
+  // Helper to close the mobile menu
+  function closeMobileMenu() {
+    const toggleBtn = document.querySelector('.nav__mobile-toggle');
+    const menu = document.querySelector('.nav__menu');
+    if (toggleBtn && menu) {
+      toggleBtn.classList.remove('active');
+      menu.classList.remove('open');
+      document.body.style.overflow = '';
+      // Also close any open dropdowns
+      document.querySelectorAll('.nav__item.mobile-open').forEach(item => {
+        item.classList.remove('mobile-open');
+      });
+    }
+  }
+
   document.addEventListener('click', (e) => {
+    // 1. Hamburger toggle
     const toggle = e.target.closest('.nav__mobile-toggle');
     if (toggle) {
       const menu = document.querySelector('.nav__menu');
       if (menu) {
+        const isOpening = !menu.classList.contains('open');
         toggle.classList.toggle('active');
         menu.classList.toggle('open');
-        document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+        document.body.style.overflow = isOpening ? 'hidden' : '';
+        if (!isOpening) {
+          // Closing — also collapse all sub-dropdowns
+          document.querySelectorAll('.nav__item.mobile-open').forEach(item => {
+            item.classList.remove('mobile-open');
+          });
+        }
       }
       return;
     }
 
+    // 2. Dropdown parent link (IP Services, Legal, etc.)
     const dropdownLink = e.target.closest('.nav__item--has-dropdown > .nav__link');
     if (dropdownLink) {
       if (window.innerWidth <= 1024) {
         e.preventDefault();
         const item = dropdownLink.closest('.nav__item--has-dropdown');
-        if (item) item.classList.toggle('mobile-open');
+        if (item) {
+          const wasOpen = item.classList.contains('mobile-open');
+          // Accordion: close all siblings first
+          document.querySelectorAll('.nav__item--has-dropdown.mobile-open').forEach(other => {
+            if (other !== item) other.classList.remove('mobile-open');
+          });
+          item.classList.toggle('mobile-open', !wasOpen);
+        }
       }
       return;
     }
 
-    const navLink = e.target.closest('.nav__dropdown-link');
-    if (navLink) {
-      const toggleBtn = document.querySelector('.nav__mobile-toggle');
-      const menu = document.querySelector('.nav__menu');
-      if (toggleBtn && menu) {
-        toggleBtn.classList.remove('active');
-        menu.classList.remove('open');
-        document.body.style.overflow = '';
-      }
+    // 3. Dropdown sub-link (e.g. Patent Analytics)
+    const subLink = e.target.closest('.nav__dropdown-link');
+    if (subLink && window.innerWidth <= 1024) {
+      closeMobileMenu();
+      return;
+    }
+
+    // 4. Top-level nav link without dropdown (Home, About, Contact)
+    const topLink = e.target.closest('.nav__menu > .nav__item:not(.nav__item--has-dropdown) > .nav__link');
+    if (topLink && window.innerWidth <= 1024) {
+      closeMobileMenu();
+      return;
     }
   });
 
-  // Close on resize
+  // Close on resize to desktop
   window.addEventListener('resize', () => {
-    const menu = document.querySelector('.nav__menu');
-    if (menu && window.innerWidth > 1024 && menu.classList.contains('open')) {
-      const toggleBtn = document.querySelector('.nav__mobile-toggle');
-      if (toggleBtn) toggleBtn.classList.remove('active');
-      menu.classList.remove('open');
-      document.body.style.overflow = '';
+    if (window.innerWidth > 1024) {
+      closeMobileMenu();
     }
   });
 }
